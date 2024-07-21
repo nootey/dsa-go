@@ -4,7 +4,7 @@ import (
 	"testing"
 )
 
-func TestMyArray_Add(t *testing.T) {
+func Test1DArray_Add(t *testing.T) {
 	arr := NewSDArray(2)
 	arr.Add(1)
 	arr.Add(2)
@@ -20,7 +20,7 @@ func TestMyArray_Add(t *testing.T) {
 	}
 }
 
-func TestMyArray_GetSet(t *testing.T) {
+func Test1DArray_GetSet(t *testing.T) {
 	arr := NewSDArray(2)
 	arr.Add(1)
 	arr.Add(2)
@@ -33,7 +33,7 @@ func TestMyArray_GetSet(t *testing.T) {
 	}
 }
 
-func TestMyArray_Remove(t *testing.T) {
+func Test1DArray_Remove(t *testing.T) {
 	arr := NewSDArray(3)
 	arr.Add(1)
 	arr.Add(2)

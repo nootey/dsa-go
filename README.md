@@ -5,12 +5,26 @@ The goal is to implement as many as possible while learning and mastering GoLang
 
 Each implementation is accompanied by unit tests to ensure correctness.
 
+To run the tests, you can use the following command.
+
+```bash
+go run RunTests.go
+```
+
+To run tests in a single directory, use the command.
+
+```bash
+# To run tests on the arrays directory
+go run RunTests.go ./structures/arrays
+```
+
+
 ## Data Structures
 
-    - 
+- [Arrays (One-dimensional)](./structures/arrays/1DArray.go)
 
 ## Algorithms
 
-    - 
+- TBA
 
 

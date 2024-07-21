@@ -1,6 +1,8 @@
 package arrays
 
-import "fmt"
+import (
+	"errors"
+)
 
 type SDArray struct {
 	data     []int
@@ -32,6 +34,7 @@ func (a *SDArray) Add(element int) {
 	a.size++
 }
 
+// Doubling the capacity is a common strategy to minimize the frequency of resizing operations.
 func (a *SDArray) resize() {
 	newCapacity := a.capacity * 2
 	newData := make([]int, newCapacity)
@@ -42,14 +45,14 @@ func (a *SDArray) resize() {
 
 func (a *SDArray) Get(index int) (int, error) {
 	if index < 0 || index >= a.size {
-		return 0, fmt.Errorf("index out of bounds")
+		return 0, errors.New("index out of bounds")
 	}
 	return a.data[index], nil
 }
 
 func (a *SDArray) Set(index int, element int) error {
 	if index < 0 || index >= a.size {
-		return fmt.Errorf("index out of bounds")
+		return errors.New("index out of bounds")
 	}
 	a.data[index] = element
 	return nil
@@ -57,7 +60,7 @@ func (a *SDArray) Set(index int, element int) error {
 
 func (a *SDArray) Remove(index int) error {
 	if index < 0 || index >= a.size {
-		return fmt.Errorf("index out of bounds")
+		return errors.New("index out of bounds")
 	}
 	for i := index; i < a.size-1; i++ {
 		a.data[i] = a.data[i+1]
