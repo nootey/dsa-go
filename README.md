@@ -21,7 +21,8 @@ go run RunTests.go ./structures/arrays
 
 ## Data Structures
 
-- [Arrays (One-dimensional)](./structures/arrays/1DArray.go)
+- [x] [Arrays (One-dimensional)](./structures/arrays/1DArray.go)
+- [x] [Arrays (Two-dimensional)](./structures/arrays/2DArray.go)
 
 ## Algorithms
 
