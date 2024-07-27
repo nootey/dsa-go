@@ -27,5 +27,6 @@ go run RunTests.go ./structures/arrays
 ## Algorithms
 
 - [x] [Bubble sort](./algorithms/sorting/BubbleSort.go)
+- [x] [Selection sort](./algorithms/sorting/SelectionSort.go)
 
 
