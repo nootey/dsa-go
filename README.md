@@ -26,6 +26,6 @@ go run RunTests.go ./structures/arrays
 
 ## Algorithms
 
-- TBA
+- [x] [Bubble sort](./algorithms/sorting/BubbleSort.go)
 
 
