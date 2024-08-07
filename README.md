@@ -30,5 +30,6 @@ go run RunTests.go ./structures/arrays
 
 - [x] [Bubble sort](./algorithms/sorting/BubbleSort.go)
 - [x] [Selection sort](./algorithms/sorting/SelectionSort.go)
+- [x] [Insertion sort](./algorithms/sorting/InsertionSort.go)
 
 
