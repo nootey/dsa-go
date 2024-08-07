@@ -5,6 +5,7 @@ import "errors"
 type Node[T comparable] struct {
 	Value T
 	Next  *Node[T]
+	Prev  *Node[T]
 }
 
 type SinglyLinkedList[T comparable] struct {
@@ -138,4 +139,21 @@ func (list *SinglyLinkedList[T]) RemoveItemByPosition(pos int) error {
 	item.Next = item.Next.Next
 
 	return nil
+}
+
+func (list *SinglyLinkedList[T]) FindItem(val T) (*Node[T], error) {
+
+	if list.Head == nil {
+		return nil, errors.New("empty list")
+	}
+
+	item := list.Head
+	for item != nil {
+		if item.Value == val {
+			return item, nil
+		}
+		item = item.Next
+	}
+
+	return nil, errors.New("list doesn't contain provided value")
 }
