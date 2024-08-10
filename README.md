@@ -25,6 +25,7 @@ go run RunTests.go ./structures/arrays
 - [x] [Arrays (Two-dimensional)](./structures/arrays/2DArray.go)
 - [x] [Singly Linked List](./structures/linked-lists/SinglyLinkedList.go)
 - [x] [Doubly Linked List](./structures/linked-lists/DoublyLinkedList.go)
+- [x] [Stack](./structures/stacks/Stack.go)
 
 ## Algorithms
 
