@@ -33,5 +33,6 @@ go run RunTests.go ./structures/arrays
 - [x] [Selection sort](./algorithms/sorting/SelectionSort.go)
 - [x] [Insertion sort](./algorithms/sorting/InsertionSort.go)
 - [x] [Merge sort](./algorithms/sorting/MergeSort.go)
+- [x] [Quick sort](./algorithms/sorting/QuickSort.go)
 
 
