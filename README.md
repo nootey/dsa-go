@@ -27,6 +27,7 @@ go run RunTests.go ./structures/arrays
 - [x] [Doubly Linked List](./structures/linked-lists/DoublyLinkedList.go)
 - [x] [Stack](./structures/stacks/Stack.go)
 - [x] [Simple Queue](./structures/queue/SimpleQueue.go)
+- [x] [Priority Queue](./structures/queue/PriorityQueue.go)
 
 ## Algorithms
 
