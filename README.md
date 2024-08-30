@@ -32,10 +32,14 @@ go run RunTests.go ./structures/arrays
 
 ## Algorithms
 
-- [x] [Bubble sort](./algorithms/sorting/BubbleSort.go)
-- [x] [Selection sort](./algorithms/sorting/SelectionSort.go)
-- [x] [Insertion sort](./algorithms/sorting/InsertionSort.go)
-- [x] [Merge sort](./algorithms/sorting/MergeSort.go)
-- [x] [Quick sort](./algorithms/sorting/QuickSort.go)
+### Sorting
 
+  - [x] [Bubble sort](./algorithms/sorting/BubbleSort.go)
+  - [x] [Selection sort](./algorithms/sorting/SelectionSort.go)
+  - [x] [Insertion sort](./algorithms/sorting/InsertionSort.go)
+  - [x] [Merge sort](./algorithms/sorting/MergeSort.go)
+  - [x] [Quick sort](./algorithms/sorting/QuickSort.go)
 
+### Searching
+
+  - [x] [Linear Search](./algorithms/searching/LinearSearch.go)
