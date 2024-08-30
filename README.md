@@ -28,6 +28,7 @@ go run RunTests.go ./structures/arrays
 - [x] [Stack](./structures/stacks/Stack.go)
 - [x] [Simple Queue](./structures/queue/SimpleQueue.go)
 - [x] [Priority Queue](./structures/queue/PriorityQueue.go)
+- [x] [Hash Table](./structures/hash-tables/HashTable.go)
 
 ## Algorithms
 
