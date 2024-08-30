@@ -18,7 +18,6 @@ To run tests in a single directory, use the command.
 go run RunTests.go ./structures/arrays
 ```
 
-
 ## Data Structures
 
 - [x] [Arrays (One-dimensional)](./structures/arrays/1DArray.go)
@@ -43,3 +42,4 @@ go run RunTests.go ./structures/arrays
 ### Searching
 
   - [x] [Linear Search](./algorithms/searching/LinearSearch.go)
+  - [x] [Binary Search](./algorithms/searching/BinarySearch.go)
