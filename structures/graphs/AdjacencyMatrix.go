@@ -12,12 +12,12 @@ type AdjacencyMatrixGraph struct {
 }
 
 // CreateNewGraph creates a new graph with the specified size (number of vertices)
-func CreateNewGraph(size int) AdjacencyMatrixGraph {
+func CreateNewGraph(size int) *AdjacencyMatrixGraph {
 	matrix := make([][]int, size)
 	for i := range matrix {
 		matrix[i] = make([]int, size) // Initialize each row
 	}
-	return AdjacencyMatrixGraph{matrix: matrix}
+	return &AdjacencyMatrixGraph{matrix: matrix}
 }
 
 // AddNode adds a new node to the graph
