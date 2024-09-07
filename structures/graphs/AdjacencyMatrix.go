@@ -1,6 +1,9 @@
 package graphs
 
-import "fmt"
+import (
+	"errors"
+	"fmt"
+)
 
 type Node struct {
 	Data string
@@ -12,12 +15,15 @@ type AdjacencyMatrixGraph struct {
 }
 
 // CreateNewGraph creates a new graph with the specified size (number of vertices)
-func CreateNewGraph(size int) *AdjacencyMatrixGraph {
+func CreateNewGraph(size int) (*AdjacencyMatrixGraph, error) {
+	if size < 0 {
+		return nil, errors.New("invalid size")
+	}
 	matrix := make([][]int, size)
 	for i := range matrix {
 		matrix[i] = make([]int, size) // Initialize each row
 	}
-	return &AdjacencyMatrixGraph{Matrix: matrix}
+	return &AdjacencyMatrixGraph{Matrix: matrix}, nil
 }
 
 // AddNode adds a new node to the graph
