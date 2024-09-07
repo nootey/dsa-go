@@ -53,8 +53,8 @@ go run RunTests.go ./structures/arrays
 
 #### Basic traversal
 
-  - [ ] [Breadth-First Search](./algorithms/graphing/basic-traversal/BreadthFirstSearch.go)
-  - [ ] [Depth-First Search](./algorithms/graphing/basic-traversal/DepthFirstSearch.go)
+  - [x] [Breadth-First Search](./algorithms/graphing/basic-traversal/BreadthFirstSearch.go)
+  - [x] [Depth-First Search](./algorithms/graphing/basic-traversal/DepthFirstSearch.go)
 
 #### Pathfinding
 
