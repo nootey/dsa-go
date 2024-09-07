@@ -36,15 +36,18 @@ func (q *SimpleQueue[T]) EnqueueSimple(item T) error {
 	return nil
 }
 
-func (q *SimpleQueue[T]) DequeueSimple() error {
+func (q *SimpleQueue[T]) DequeueSimple() (T, error) {
+	var zeroValue T // default value for type T
+
 	if q.IsEmpty() {
-		return errors.New("queue is empty")
+		return zeroValue, errors.New("queue is empty")
 	}
 
+	item := q.items[0]
 	q.items = q.items[1:]
 	q.rear--
 
-	return nil
+	return item, nil
 }
 
 func (q *SimpleQueue[T]) IsEmpty() bool {

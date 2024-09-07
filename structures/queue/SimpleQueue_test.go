@@ -37,13 +37,13 @@ func TestDequeue(t *testing.T) {
 
 	// Test dequeue
 	for simpleQueue.Size() > 0 {
-		if err := simpleQueue.DequeueSimple(); err != nil {
+		if _, err := simpleQueue.DequeueSimple(); err != nil {
 			t.Errorf("Unexpected error: %v", err)
 		}
 	}
 
 	// Test dequeue with empty queue
-	if err := simpleQueue.DequeueSimple(); err == nil {
+	if _, err := simpleQueue.DequeueSimple(); err == nil {
 		t.Errorf("Unexpected error: %v", err)
 	}
 }
