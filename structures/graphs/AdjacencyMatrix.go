@@ -33,10 +33,16 @@ func (g *AdjacencyMatrixGraph) AddNode(data string) {
 }
 
 // AddEdge adds a directed edge between two vertices
-func (g *AdjacencyMatrixGraph) AddEdge(src int, dest int) {
+func (g *AdjacencyMatrixGraph) AddEdge(src int, dest int, w ...int) {
+
+	weight := 1
+	if len(w) > 0 {
+		weight = w[0]
+	}
+
 	// Ensure that src and dest are within the bounds of the graph size
 	if src < len(g.Matrix) && dest < len(g.Matrix) {
-		g.Matrix[src][dest] = 1
+		g.Matrix[src][dest] = weight
 	}
 }
 
