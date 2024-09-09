@@ -27,7 +27,10 @@ go run RunTests.go ./structures/arrays
   - [x] [Stack](./structures/stacks/Stack.go)
   - [x] [Simple Queue](./structures/queue/SimpleQueue.go)
   - [x] [Priority Queue](./structures/queue/PriorityQueue.go)
+  - [ ] TODO: [Heap Priority Queue](./structures/queue/HeapPriorityQueue.go)
   - [x] [Hash Table](./structures/hash-tables/HashTable.go)
+  - [x] [Hash Table](./structures/hash-tables/HashTable.go)
+  - [ ] TODO: [Heap](./structures/heaps/Heap.go)
 
  ### Graph representation
 
@@ -43,6 +46,7 @@ go run RunTests.go ./structures/arrays
   - [x] [Insertion sort](./algorithms/sorting/InsertionSort.go)
   - [x] [Merge sort](./algorithms/sorting/MergeSort.go)
   - [x] [Quick sort](./algorithms/sorting/QuickSort.go)
+  - [ ] TODO: [Heap sort](./algorithms/sorting/HeapSort.go)
 
 ### Searching
 
@@ -58,7 +62,8 @@ go run RunTests.go ./structures/arrays
 
 #### Pathfinding
 
-  - [ ] [Dijkstra](./algorithms/graphing/pathfinding/Dijkstra.go)
+  - [x] [Dijkstra](./algorithms/graphing/pathfinding/Dijkstra.go)
+  -     TODO: Implement Heap Priority Queue to Dijkstra
   - [ ] [Bellman-Ford](./algorithms/graphing/pathfinding/BellmanFord.go)
   - [ ] [Floyd-Warshall](./algorithms/graphing/pathfinding/FloydWarshall.go)
   - [ ] [A* (A-Star)](./algorithms/graphing/pathfinding/AStar.go)
