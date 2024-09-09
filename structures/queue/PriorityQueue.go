@@ -36,7 +36,7 @@ func (pq *PriorityQueue[T]) sortByPriority() {
 // EnqueuePriority adds an item to the priority queue with a given priority
 func (pq *PriorityQueue[T]) EnqueuePriority(item T, priority int) error {
 	// By default, priority queues using heaps do not guarantee the order of items with the same priority
-	if priority < 1 {
+	if priority < 0 {
 		return errors.New("invalid priority")
 	}
 
