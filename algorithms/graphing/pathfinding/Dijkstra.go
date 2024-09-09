@@ -10,19 +10,11 @@ import (
 
 //TODO: Currently uses a non-heap priority queue
 
-func FindPathWithDijkstra(g *graphs.WeightedGraph, src int) error {
+func FindPathWithDijkstra(g *graphs.WeightedGraph, src int) ([]float64, [][]int, error) {
 
 	// Input validation
-	if src < 0 {
-		return errors.New("provided node index out of range")
-	}
-
-	if len(g.Nodes) == 0 {
-		return errors.New("graph has no nodes")
-	}
-
-	if g.Nodes[src] == nil {
-		return errors.New("wanted node does not exist")
+	if src < 0 || len(g.Nodes) == 0 || g.Nodes[src] == nil {
+		return nil, nil, errors.New("invalid graph or source node")
 	}
 
 	// Initialize required tables
@@ -44,7 +36,7 @@ func FindPathWithDijkstra(g *graphs.WeightedGraph, src int) error {
 		// Extract node with minimum distance
 		u, err := pq.DequeuePriority()
 		if err != nil {
-			return errors.New("error dequeuing from priority queue")
+			return nil, nil, errors.New("error dequeuing from priority queue")
 		}
 
 		// If this node is already visited, skip it
@@ -82,9 +74,38 @@ func FindPathWithDijkstra(g *graphs.WeightedGraph, src int) error {
 
 	}
 
-	fmt.Println("Distance Table:", distanceTable)
-	fmt.Println("Previous Node Table:", previousNodeTable)
-	fmt.Println("Visited Nodes Table:", visitedNodesTable)
+	// Reconstruct paths for each node
+	paths := make([][]int, len(g.Nodes))
+	for i := range paths {
+		paths[i] = reconstructPath(previousNodeTable, src, i)
+	}
 
-	return nil
+	fmt.Println("Distance Table:", distanceTable)
+	fmt.Println("Paths:", paths)
+
+	return distanceTable, paths, nil
+}
+
+// reconstructPath reconstructs the path from source to destination
+func reconstructPath(previousNodeTable []*int, src, dest int) []int {
+	var path []int
+
+	// Backtrack from destination to source using the previousNodeTable
+	for current := &dest; current != nil; current = previousNodeTable[*current] {
+		path = append([]int{*current}, path...) // Add the current node to the front of the path
+		if *current == src {
+			break
+		}
+	}
+
+	// If the destination is unreachable, return an empty path
+	if len(path) == 0 || path[0] != src {
+		return []int{}
+	}
+
+	return path
+}
+
+func main() {
+
 }
