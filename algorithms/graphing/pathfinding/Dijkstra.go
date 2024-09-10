@@ -105,7 +105,3 @@ func reconstructPath(previousNodeTable []*int, src, dest int) []int {
 
 	return path
 }
-
-func main() {
-
-}
