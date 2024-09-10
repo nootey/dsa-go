@@ -32,6 +32,7 @@ func TestFindPathWithFloydWarshall(t *testing.T) {
 		{2, 5, 6, 8, 0}, // From node 4
 	}
 
+	fmt.Println("\n")
 	// Run Floyd-Warshall algorithm
 	distanceTable, predecessorTable := FindPathWithFloydWarshall(g)
 
