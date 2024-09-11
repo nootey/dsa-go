@@ -66,5 +66,5 @@ go run RunTests.go ./structures/arrays
   -     TODO: Implement Heap Priority Queue to Dijkstra
   - [x] [Bellman-Ford](./algorithms/graphing/pathfinding/BellmanFord.go)
   - [x] [Floyd-Warshall](./algorithms/graphing/pathfinding/FloydWarshall.go)
-  - [ ] TODO: [A* (A-Star)](./algorithms/graphing/pathfinding/AStar.go)
+  - [x] [A* (A-Star)](./algorithms/graphing/pathfinding/AStar.go)
  
