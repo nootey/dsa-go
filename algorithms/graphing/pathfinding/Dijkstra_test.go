@@ -49,7 +49,6 @@ func TestFindPathWithDijkstra(t *testing.T) {
 	// Print out the graph
 	fmt.Println("Graph")
 	graphs.PrintWeightedGraph(g)
-	fmt.Printf("\n")
 
 	// Find the shortest path from node 0 using Dijkstra
 	distanceTable, paths, err := FindPathWithDijkstra(g, 0)
