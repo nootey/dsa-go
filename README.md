@@ -30,7 +30,7 @@ go run RunTests.go ./structures/arrays
   - [ ] TODO: [Heap Priority Queue](./structures/queue/HeapPriorityQueue.go)
   - [x] [Hash Table](./structures/hash-tables/HashTable.go)
   - [x] [Binary Search Tree](./structures/trees/BinarySearchTree.go)
-  - [ ] TODO: [Heap](./structures/heap/Heap.go)
+  - [x] [Heap](./structures/heap/Heap.go)
 
  ### Graph representation
 
