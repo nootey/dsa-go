@@ -27,7 +27,7 @@ go run RunTests.go ./structures/arrays
   - [x] [Stack](./structures/stacks/Stack.go)
   - [x] [Simple Queue](./structures/queue/SimpleQueue.go)
   - [x] [Priority Queue](./structures/queue/PriorityQueue.go)
-  - [ ] TODO: [Heap Priority Queue](./structures/queue/HeapPriorityQueue.go)
+  - [x] [Heap Priority Queue](./structures/queue/PriorityQueueHeap.go)
   - [x] [Hash Table](./structures/hash-tables/HashTable.go)
   - [x] [Binary Search Tree](./structures/trees/BinarySearchTree.go)
   - [x] [Heap](./structures/heap/Heap.go)

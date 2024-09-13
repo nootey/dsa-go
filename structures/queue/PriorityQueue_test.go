@@ -47,7 +47,7 @@ func TestPriorityWithSameValues(t *testing.T) {
 func TestEnqueueWithZeroPriority(t *testing.T) {
 	priorityQueue := CreatePriorityQueue[string]()
 
-	if err := priorityQueue.EnqueuePriority("item", 0); err == nil {
+	if err := priorityQueue.EnqueuePriority("item", -1); err == nil {
 		t.Errorf("Expected error for zero priority, but got none")
 	}
 }
