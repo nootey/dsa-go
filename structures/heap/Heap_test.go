@@ -6,7 +6,7 @@ import (
 
 // TestMinHeapInsertAndExtract tests insertion and extraction in a min-heap
 func TestMinHeapInsertAndExtract(t *testing.T) {
-	h := &Heap{IsMinHeap: true}
+	h := CreateNewHeap(true)
 
 	h.Insert(10)
 	h.Insert(4)
@@ -39,7 +39,7 @@ func TestMinHeapInsertAndExtract(t *testing.T) {
 
 // TestMaxHeapInsertAndExtract tests insertion and extraction in a max-heap
 func TestMaxHeapInsertAndExtract(t *testing.T) {
-	h := &Heap{IsMinHeap: false}
+	h := CreateNewHeap(false)
 
 	h.Insert(10)
 	h.Insert(4)
@@ -74,7 +74,7 @@ func TestMaxHeapInsertAndExtract(t *testing.T) {
 func TestBuildHeap(t *testing.T) {
 	data := []int{10, 4, 15, 1}
 
-	minHeap := &Heap{IsMinHeap: true}
+	minHeap := CreateNewHeap(true)
 	minHeap.BuildHeap(data)
 
 	min := minHeap.GetMin()
@@ -93,7 +93,7 @@ func TestBuildHeap(t *testing.T) {
 
 // TestEmptyHeap tests behavior on an empty heap
 func TestEmptyHeap(t *testing.T) {
-	h := &Heap{IsMinHeap: true}
+	h := CreateNewHeap(true)
 
 	extracted := h.ExtractRoot()
 	if extracted != 0 {

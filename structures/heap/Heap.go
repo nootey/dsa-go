@@ -7,9 +7,10 @@ type Heap struct {
 	IsMinHeap bool
 }
 
-func CreateNewHeap() *Heap {
+func CreateNewHeap(isMinHeap bool) *Heap {
 	return &Heap{
-		Data: []int{},
+		Data:      []int{},
+		IsMinHeap: isMinHeap,
 	}
 }
 
