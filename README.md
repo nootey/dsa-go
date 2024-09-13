@@ -46,7 +46,7 @@ go run RunTests.go ./structures/arrays
   - [x] [Insertion sort](./algorithms/sorting/InsertionSort.go)
   - [x] [Merge sort](./algorithms/sorting/MergeSort.go)
   - [x] [Quick sort](./algorithms/sorting/QuickSort.go)
-  - [ ] TODO: [Heap sort](./algorithms/sorting/HeapSort.go)
+  - [x] [Heap sort](./algorithms/sorting/HeapSort.go)
 
 ### Searching
 
