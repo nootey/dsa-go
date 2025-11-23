@@ -8,14 +8,7 @@ Each implementation is accompanied by unit tests to ensure correctness.
 To run the tests, you can use the following command.
 
 ```bash
-go run RunTests.go
-```
-
-To run tests in a single directory, use the command.
-
-```bash
-# To run tests on the arrays directory
-go run RunTests.go ./structures/arrays
+go test -v ./...
 ```
 
 ## Data Structures
